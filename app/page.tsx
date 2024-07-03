@@ -87,7 +87,7 @@ export default function Home() {
             </button>
           </form>
           <button onClick={toggleTheme} className="rounded-full bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 dark:bg-gray-200 dark:hover:bg-gray-400">
-            <Image className=""
+            <img className=""
               alt={dark ? "Switch to Dark Mode" : "Switch to Light Mode"}
               src={dark ? "/images/lightMode.png" : "/images/darkMode.png"}
               width={30}
@@ -100,7 +100,7 @@ export default function Home() {
           <div className={isGrid ? "columns-2 md:columns-5 mx-auto space-y-4" : "list-none flex items-center justify-center flex-col gap-4"}>
             {data.map((item: any) => (
               <div key={item.link} className="gap-2 border-4 border-gray-800 dark:border-gray-300 overflow-hidden">
-                <Image className=""
+                <img className=""
                   alt={item.title}
                   src={item.media.m}
                   width={600}
